@@ -1,0 +1,14 @@
+{
+  "name": "url-shortener-gitops",
+  "version": "1.0.0",
+  "description": "Simple URL shortener using Cloudflare Workers and GitOps pattern",
+  "main": "worker/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
