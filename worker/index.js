@@ -3,21 +3,14 @@ addEventListener("fetch", (event) => {
 });
 
 async function handleRequest(request) {
-  const yaml = require("js-yaml");
-  console.log("Links : ", LINKS_YAML);
-  let links;
-  try {
-    links = yaml.load(LINKS_YAML);
-    console.log("Links : ", links);
-  } catch (e) {
-    console.log("Error : ", e);
-  }
+  const links = JSON.parse(LINKS_JSON);
+  console.log("Links : ", links);
 
   const url = new URL(request.url);
   const pathname = url.pathname.slice(1);
   console.log("Pathname : ", pathname);
 
-  const link = links.find((link) => link.slugs.includes(pathname));
+  const link = links.links.find((link) => link.slugs.includes(pathname));
   console.log("Found Link : ", link);
 
   if (link) {
