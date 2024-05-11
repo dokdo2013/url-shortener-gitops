@@ -1,7 +1,11 @@
 const yaml = require("js-yaml");
 console.log("Links : ", LINKS_YAML);
-const links = yaml.load(LINKS_YAML);
-console.log("Loaded Links : ", links);
+let links;
+try {
+  links = yaml.load(fs.readFileSync(LINKS_YAML, "utf8"));
+} catch (e) {
+  console.log("Error : ", e);
+}
 
 addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
