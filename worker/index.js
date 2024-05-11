@@ -4,6 +4,7 @@ addEventListener("fetch", (event) => {
 
 async function handleRequest(request) {
   const yaml = require("js-yaml");
+  const fs = require("fs");
   console.log("Links : ", LINKS_YAML);
   let links;
   try {

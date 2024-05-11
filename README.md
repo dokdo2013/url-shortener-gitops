@@ -1,4 +1,4 @@
-# Simple URL Shortener with Cloudflare Workers
+# Simple Serverless URL Shortener with GitOps
 
 URL Shortener GitOps is a serverless URL shortening service built with Cloudflare Workers and managed using the GitOps approach. It allows you to create short, custom URLs that redirect to longer URLs, making them easier to share and remember.
 
