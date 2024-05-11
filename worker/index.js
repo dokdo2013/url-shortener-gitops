@@ -1,5 +1,5 @@
 const yaml = require("js-yaml");
-const links = yaml.safeLoad(LINKS_YAML);
+const links = yaml.load(LINKS_YAML);
 
 addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
