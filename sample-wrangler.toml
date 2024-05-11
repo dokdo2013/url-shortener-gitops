@@ -1,0 +1,8 @@
+name = "url-shortener-gitops"
+type = "webpack"
+account_id = "my-account-id"
+workers_dev = true
+route = "link.haenu.com/*"
+
+[vars]
+LINKS_YAML = "links.yaml"
