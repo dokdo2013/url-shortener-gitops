@@ -4,11 +4,10 @@ addEventListener("fetch", (event) => {
 
 async function handleRequest(request) {
   const yaml = require("js-yaml");
-  const fs = require("fs");
   console.log("Links : ", LINKS_YAML);
   let links;
   try {
-    links = yaml.load(fs.readFileSync(LINKS_YAML, "utf8"));
+    links = yaml.load(LINKS_YAML);
   } catch (e) {
     console.log("Error : ", e);
   }
