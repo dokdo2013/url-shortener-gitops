@@ -8,6 +8,7 @@ async function handleRequest(request) {
   let links;
   try {
     links = yaml.load(LINKS_YAML);
+    console.log("Links : ", links);
   } catch (e) {
     console.log("Error : ", e);
   }
