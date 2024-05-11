@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "js-yaml": "3.14.1"
+    "js-yaml": "^4.1.0"
   }
 }
