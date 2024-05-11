@@ -3,7 +3,7 @@ addEventListener("fetch", (event) => {
 });
 
 async function handleRequest(request) {
-  const links = JSON.parse(LINKS_JSON);
+  const links = require("./links.json");
   console.log("Links : ", links);
 
   const url = new URL(request.url);
