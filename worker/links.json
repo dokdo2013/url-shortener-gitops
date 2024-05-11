@@ -2,11 +2,34 @@
   "links": [
     {
       "url": "https://github.com/dokdo2013",
-      "slugs": ["gh", "github"]
+      "slugs": ["gh", "github", "깃허브", "git"]
     },
     {
       "url": "https://twitter.com/doyoniiii_",
-      "slugs": ["x", "twitter"]
+      "slugs": ["x", "twitter", "트위터"]
+    },
+    {
+      "url": "https://sendtime.app/ko/reservation?i=1ipffx",
+      "slugs": [
+        "coffee",
+        "coffee-chat",
+        "sendtime",
+        "커피챗",
+        "coffeechat",
+        "mentoring"
+      ]
+    },
+    {
+      "url": "https://blog.haenu.com",
+      "slugs": ["blog", "tistory", "블로그"]
+    },
+    {
+      "url": "https://haenu.com",
+      "slugs": ["haenu", "portfolio", "pf", "포트폴리오"]
+    },
+    {
+      "url": "https://www.linkedin.com/in/dokdo2013/",
+      "slugs": ["linkedin", "링크드인"]
     }
   ]
 }
