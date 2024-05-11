@@ -7,9 +7,12 @@ async function handleRequest(request) {
 
   const url = new URL(request.url);
   const pathname = url.pathname.slice(1);
-  console.log("Pathname : ", pathname);
+  const urlDecodedPathname = decodeURIComponent(pathname);
+  console.log("Pathname : ", urlDecodedPathname);
 
-  const link = links.links.find((link) => link.slugs.includes(pathname));
+  const link = links.links.find((link) =>
+    link.slugs.includes(urlDecodedPathname)
+  );
   console.log("Found Link : ", link);
 
   if (link) {
